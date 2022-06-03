@@ -1,0 +1,25 @@
+{{> "divider"}}
+<footer class="gh-foot">
+    <div class="gh-foot-left">
+        {{#if @custom.contact_email}}
+        Kontakt: <a href="mailto:{{@custom.contact_email}}">{{@custom.contact_email}}</a>
+        {{/if}}
+        <div class="gh-foot-nav">
+            {{navigation type="secondary"}}
+            <a href="https://www.instagram.com/ukr.ainehelpnow/" title="Instagram" target="_blank" rel="noopener">{{>
+                "icons/instagram"}}</a>
+        </div>
+        Copyright © {{date value format="YYYY"}} {{@site.title}}
+
+    </div>
+    <div class="gh-foot-right">
+        <p><strong>Spendenkonto bei der {{@custom.bank}}:</strong></p>
+        <p>{{@custom.verwendungszweck}}</p>
+        <p>IBAN: {{@custom.iban}}</p>
+        <p>BIC: {{@custom.bic}}</p>
+        <a href="/#donate" class="gh-button" role="button">
+            Spenden
+        </a>
+    </div>
+
+</footer>

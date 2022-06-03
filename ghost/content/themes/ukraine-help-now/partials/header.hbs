@@ -4,9 +4,9 @@
         <div class="gh-head-brand">
             <a class="gh-head-logo" href="{{@site.url}}">
                 {{#if @site.logo}}
-                    <img src="{{@site.logo}}" alt="{{@site.title}}" />
+                <img src="{{@site.logo}}" alt="{{@site.title}}" />
                 {{else}}
-                    {{@site.title}}
+                {{@site.title}}
                 {{/if}}
             </a>
             <a class="gh-burger" role="button">
@@ -21,12 +21,16 @@
         <div class="gh-head-actions">
             <div class="gh-head-actions-list">
                 {{#if @site.facebook}}
-                <a href="{{facebook_url @site.facebook}}" title="Facebook" target="_blank" rel="noopener">{{> "icons/facebook"}}</a>
+                <a href="{{facebook_url @site.facebook}}" title="Facebook" target="_blank" rel="noopener">{{>
+                    "icons/facebook"}}</a>
                 {{/if}}
                 {{#if @site.twitter}}
-                <a href="{{twitter_url @site.twitter}}" title="Twitter" target="_blank" rel="noopener">{{> "icons/twitter"}}</a>
+                <a href="{{twitter_url @site.twitter}}" title="Twitter" target="_blank" rel="noopener">{{>
+                    "icons/twitter"}}</a>
                 {{/if}}
-                <a href="https://www.instagram.com/ukr.ainehelpnow/" title="Instagram" target="_blank" rel="noopener">{{> "icons/instagram"}}</a>
+                <a href="/#donate" class="gh-button" role="button">
+                    Spenden
+                </a>
             </div>
         </div>
     </nav>

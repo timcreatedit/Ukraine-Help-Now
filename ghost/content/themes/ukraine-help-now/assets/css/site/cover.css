@@ -11,17 +11,26 @@
 
 
 .gh-cover-content {
-    width: 100%;
     padding: 10rem;
     background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+
+}
+
+.gh-cover-content .gh-container {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100%;
+    width: 100%;
 }
 
 
 .gh-home .gh-cover-content {
     background-color: transparent;
+}
+
+.gh-home .gh-container {
     justify-content: end;
 }
 
