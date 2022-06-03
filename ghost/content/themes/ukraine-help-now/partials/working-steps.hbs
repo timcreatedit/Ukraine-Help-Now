@@ -1,0 +1,21 @@
+<section class="gh-page gh-working-steps">
+    <div class="gh-container">
+        {{#get "pages" filter="tag:working-steps" order="published_at asc" limit="1"}}
+        {{#foreach pages}}
+        <h2>{{title}}</h2>
+        {{/foreach}}
+        {{/get}}
+        <div class="gh-working-steps-container">
+            {{#get "posts" filter="tag:working-steps" order="published_at asc"}}
+            {{#foreach posts}}
+            <div class="gh-working-step {{#if @last}}gh-last{{/if}}">
+                <div class="gh-circle">
+                    <div class="gh-working-step-number">{{@number}}</div>
+                </div>
+                <p class="gh-description">{{content}}</p>
+            </div>
+            {{/foreach}}
+            {{/get}}
+        </div>
+    </div>
+</section>

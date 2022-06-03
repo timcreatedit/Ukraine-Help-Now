@@ -36,6 +36,7 @@ production stylesheet in assets/built/screen.css using: gulp dev
 @import "site/partners.css";
 @import "site/partner.css";
 @import "site/success-numbers.css";
+@import "site/working-steps.css";
 @import "site/donate.css";
 
 
