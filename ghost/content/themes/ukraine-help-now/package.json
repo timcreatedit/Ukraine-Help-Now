@@ -2,7 +2,7 @@
     "name": "ukraine-help-now",
     "description": "A custom theme for ghost",
     "demo": "https://starter.ghost.io",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "engines": {
         "ghost": ">=4.0.0"
     },
