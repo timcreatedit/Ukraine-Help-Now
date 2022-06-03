@@ -1,0 +1,8 @@
+ghost/versions/*
+ghost/.ghost-cli
+ghost/.ghostpid
+ghost/config.development.json
+ghost/current
+ghost/content/*
+!ghost/content/themes/
+ghost/content/themes/casper

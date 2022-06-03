@@ -1,6 +1,10 @@
 <section class="gh-page gh-success-numbers">
     <div class="gh-container">
-        <h2>Das konnten wir dank Ihrer Hilfe bis jetzt in die Ukraine liefern:</h2>
+        {{#get "pages" filter="tag:liefervolumen" order="published_at asc" limit="1"}}
+        {{#foreach pages}}
+        <h2>{{title}}</h2>
+        {{/foreach}}
+        {{/get}}
         <div class="gh-success-numbers-container">
             {{#get "posts" filter="tag:liefervolumen" order="published_at asc"}}
             {{#foreach posts}}

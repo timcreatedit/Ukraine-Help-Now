@@ -1,3 +1,6 @@
+.gh-actions {
+    background-color: var(--color-bg);
+}
 .gh-actions .gh-container {
     padding: 4rem 0;
     display: flex;
