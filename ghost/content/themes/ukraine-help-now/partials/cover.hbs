@@ -1,14 +1,16 @@
-<div {{#if @site.cover_image}}style="background-image: url({{@site.cover_image}});"
-    {{/if}}class="gh-cover {{#is " home"}}gh-home{{/is}} {{#match
-    @custom.publication_cover_style "Half screen" }} half{{/match}}">
+<div {{#if @site.cover_image}}style="background-image: url({{@site.cover_image}});" {{/if}}class="gh-cover {{#is "
+    home"}}gh-home{{/is}} {{#match @custom.publication_cover_style "Half screen" }} half{{/match}}">
 
     <div class="gh-cover-content">
-        {{#is "home"}}
-        {{> "cover-donation-card"}}
-        {{/is}}
-        {{#tag}}
-        <h1>{{name}}</h1>
-        {{/tag}}
+        <div class="gh-container">
+            {{#is "home"}}
+            {{> "cover-donation-card"}}
+            {{/is}}
+            {{#tag}}
+            <h1>{{name}}</h1>
+            {{/tag}}
+        </div>
+
     </div>
 </div>
 {{> "divider"}}

@@ -1,3 +1,6 @@
+#donate {
+    scroll-margin-top: 8em;
+}
 .gh-donate {
     background: var(--color-bg);
 }
