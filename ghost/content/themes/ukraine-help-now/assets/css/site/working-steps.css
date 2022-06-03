@@ -70,3 +70,8 @@
 .gh-last .gh-circle {
     border-color: var(--color-secondary);
 }
+
+.gh-circle img {
+    width: 50%;
+    height: 50%;
+}

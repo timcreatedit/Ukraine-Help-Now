@@ -11,6 +11,9 @@
             <div class="gh-working-step {{#if @last}}gh-last{{/if}}">
                 <div class="gh-circle">
                     <div class="gh-working-step-number">{{@number}}</div>
+                    {{#if feature_image}}
+                    <img src="{{feature_image}}" alt="">
+                    {{/if}}
                 </div>
                 <p class="gh-description">{{content}}</p>
             </div>
