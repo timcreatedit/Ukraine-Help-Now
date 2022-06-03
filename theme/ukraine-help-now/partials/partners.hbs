@@ -1,0 +1,19 @@
+<section class="gh-page gh-partners">
+    <div class="gh-container">
+        {{#get "pages" limit="1" filter="tag:partner"}}
+        {{#foreach pages}}
+        <h2>
+            {{title}}
+        </h2>
+        {{content}}
+        {{/foreach}}
+        {{/get}}
+        <div class="gh-partners-container">
+            {{#get "posts" filter="tag:partner" order="published_at asc"}}
+            {{#foreach posts}}
+            {{> "partner"}}
+            {{/foreach}}
+            {{/get}}
+        </div>
+    </div>
+</section>

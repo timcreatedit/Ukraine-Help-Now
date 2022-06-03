@@ -1,0 +1,12 @@
+.gh-aktionen .gh-container {
+    margin: 2rem auto;
+}
+
+.gh-aktionen.gh-description {
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--color-bg);
+    padding: 4rem;
+}

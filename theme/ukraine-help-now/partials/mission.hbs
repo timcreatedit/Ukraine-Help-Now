@@ -1,0 +1,24 @@
+<section class="gh-page gh-mission">
+    <div class="gh-container">
+
+        <div class="gh-mission-video">
+            {{#if @custom.intro_video_embed}}
+            <iframe width="560" height="315" src="{{@custom.intro_video_embed}}" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            {{/if}}
+        </div>
+        <div class="gh-mission-content">
+            {{#get "pages" limit="1" filter="tag:unsere-mission"}}
+            {{#foreach pages}}
+            <h2>
+                {{title}}
+            </h2>
+            {{content}}
+            {{/foreach}}
+            {{/get}}
+
+        </div>
+    </div>
+</section>

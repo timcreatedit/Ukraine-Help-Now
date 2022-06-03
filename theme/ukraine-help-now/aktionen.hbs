@@ -1,0 +1,28 @@
+{{!< default}} {{> "cover"}}
+    {{#tag}}
+    {{#if description}}
+    <div class="gh-aktionen gh-description">
+        <p>
+            {{description}}
+        </p>
+    </div>
+    {{/if}}
+
+    {{/tag}}
+    <div class="gh-page gh-aktionen">
+        <div class="gh-container">
+
+        </div>
+
+        <div class="gh-container">
+
+            <div class="gh-postfeed">
+                {{#foreach posts}}
+
+                {{> "card"}} {{!-- partials/card.hbs --}}
+
+                {{/foreach}}
+            </div>
+
+        </div>
+    </div>

@@ -1,0 +1,44 @@
+<section id="donate" class="gh-page gh-donate">
+    <div class="gh-container">
+        {{#get "pages" limit="1" filter="tag:spendenaufruf"}}
+        {{#foreach pages}}
+        <h2>
+            {{title}}
+        </h2>
+        {{content}}
+        {{/foreach}}
+        {{/get}}
+        <div class="gh-account-container">
+            <div class="gh-arrow gh-arrow-top">
+                Spendenkonto bei
+            </div>
+            <div class="gh-arrow gh-arrow-bottom">
+                der {{@custom.bank}}
+            </div>
+
+            <p class="gh-account">
+                <strong>{{@custom.verwendungszweck}}</strong>
+                <br>IBAN: {{@custom.iban}}
+                <br>BIC: {{@custom.bic}}
+            </p>
+
+        </div>
+
+        {{#get "pages" limit="1" filter="tag:spendenaufruf-abschluss"}}
+        {{#foreach pages}}
+        {{content}}
+        {{/foreach}}
+        {{/get}}
+    </div>
+
+</section>
+
+<section class="gh-page gh-donate gh-spendenquittung">
+    <div class="gh-container">
+        {{#get "pages" limit="1" filter="tag:spendenquittung"}}
+        {{#foreach pages}}
+        {{content}}
+        {{/foreach}}
+        {{/get}}
+    </div>
+</section>

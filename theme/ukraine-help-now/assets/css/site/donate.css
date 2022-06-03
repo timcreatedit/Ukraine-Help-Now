@@ -1,0 +1,64 @@
+.gh-donate {
+    background: var(--color-bg);
+}
+
+.gh-donate .gh-container {
+    padding: 4rem 0;
+}
+
+.gh-donate h2 {
+    margin-bottom: 1rem;
+}
+
+.gh-donate p {
+    max-width: unset;
+    margin-bottom: 1rem;
+}
+
+.gh-account-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.gh-arrow {
+    padding: 8px 64px 8px 8px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    box-sizing: border-box;
+    font-weight: 600;
+    min-width: 28ch;
+}
+
+.gh-arrow-top {
+    color: white;
+    background-image: url("../../assets/arrow-top.svg");
+
+}
+
+.gh-arrow-bottom {
+    color: var(--color-primary);
+    background-image: url("../../assets/arrow-bottom.svg");
+}
+
+.gh-account {
+    margin-top: 2rem;
+}
+
+.gh-donate .thank-you-note {
+    font-family: 'Caveat', cursive;
+    color: var(--color-primary);
+    font-size: 22pt;
+    margin-top: 2rem;
+}
+
+.gh-spendenquittung {
+    margin-top: 0.5rem;
+}
+
+.gh-donate.gh-spendenquittung .gh-container{
+
+    padding: 1rem 0;
+
+    
+}

@@ -1,0 +1,15 @@
+.gh-partners {
+    background-color: var(--color-bg);
+}
+
+.gh-partners .gh-container {
+    padding: 4rem 0;
+}
+
+.gh-partners-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    align-items: flex-start;
+    grid-gap: 2rem;
+    margin-top: 2rem;
+}

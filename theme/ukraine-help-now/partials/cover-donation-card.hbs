@@ -1,0 +1,14 @@
+<div class="gh-cover-card">
+    {{#get "pages" limit="1" filter="tag:spendenbanner"}}
+    {{#foreach pages}}
+    <h6 class="gh-cover-card-header">
+        {{title}}
+    </h6>
+    <div class="gh-cover-card-body">
+        {{content}}
+    </div>
+    {{/foreach}}
+    {{/get}}
+
+
+</div>

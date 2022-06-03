@@ -1,0 +1,19 @@
+<section class="gh-page gh-members ">
+    <div class=" gh-container">
+        {{#get "pages" limit="1" filter="tag:mitglieder"}}
+        {{#foreach pages}}
+        <h2>
+            {{title}}
+        </h2>
+        {{content}}
+        {{/foreach}}
+        {{/get}}
+        <div class="gh-members-container">
+            {{#get "posts" filter="tag:mitglieder" order="published_at asc"}}
+            {{#foreach posts}}
+            {{> "member"}}
+            {{/foreach}}
+            {{/get}}
+        </div>
+    </div>
+</section>

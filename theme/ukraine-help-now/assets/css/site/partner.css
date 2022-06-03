@@ -1,0 +1,10 @@
+.gh-partner {
+    background: white;
+    padding: 2rem;
+    border-radius: var(--radius);
+}
+.gh-partner img {
+    object-fit: contain;
+    width: 100%;
+    height: 80px;
+}

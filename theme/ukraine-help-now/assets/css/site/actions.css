@@ -1,0 +1,14 @@
+.gh-actions .gh-container {
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.gh-actions .gh-postfeed {
+    padding: 2rem;
+}
+
+.gh-actions .gh-button {
+    align-self: flex-end;
+    margin-bottom: 4rem;
+}

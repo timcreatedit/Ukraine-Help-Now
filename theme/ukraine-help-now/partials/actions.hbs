@@ -1,0 +1,32 @@
+<section class="gh-page gh-actions">
+    <div class="gh-container">
+        {{#match @custom.amount_of_actions "=" "1"}}
+        <h4>Letze Hilfsaktion:</h4>
+        {{else}}
+        <h4>Letze Hilfsaktionen:</h4>
+        {{/match}}
+        <div class="gh-postfeed">
+            {{#get "posts" limit=@custom.amount_of_actions filter="tag:hilfsaktionen"}}
+            {{#foreach posts}}
+            {{> "card"}}
+            {{/foreach}}
+            {{/get}}
+        </div>
+        <a class="gh-button" href="/hilfsaktionen">Zu allen Hilfsaktionen</a>
+        {{#match @custom.amount_of_actions "=" "1"}}
+        <h4>Letze Spendenaktion:</h4>
+        {{else}}
+        <h4>Letze Spendenaktionen:</h4>
+        {{/match}}
+
+
+        <div class="gh-postfeed">
+            {{#get "posts" limit=@custom.amount_of_actions filter="tag:spendenaktionen"}}
+            {{#foreach posts}}
+            {{> "card"}}
+            {{/foreach}}
+            {{/get}}
+        </div>
+        <a class="gh-button" href="/spendenaktionen">Zu allen Spendenaktionen</a>
+    </div>
+</section>

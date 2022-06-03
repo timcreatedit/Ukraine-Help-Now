@@ -1,0 +1,54 @@
+.gh-card:not(:first-child) {
+    margin: 8vmin auto 0;
+}
+
+.gh-card-link {
+    display: flex;
+    gap: 2rem;
+    flex-direction: row;
+}
+
+.gh-card-image {
+    width: min(270px, 30vw);
+    height: min(270px, 30vw);
+    min-width: min(270px, 30vw);
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.gh-card-meta {
+    display: block;
+    margin: 1rem 0 0 0;
+    font-size: 1.4rem;
+    line-height: 1.2em;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+.gh-card-content {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 1.6rem;
+}
+
+.gh-card-content p {
+    margin: 1.2rem 0;
+    padding: 0;
+}
+
+.gh-card-content>strong {
+    display: inline-block;
+    padding: 1px 0;
+    font-weight: 500;
+    box-shadow: 0 -1px 0 0 inset currentColor;
+    opacity: 0.5;
+}
+
+@media (max-width: 780px) {
+    .gh-card-link {
+        flex-direction: column;
+        align-items: center;
+    }
+}

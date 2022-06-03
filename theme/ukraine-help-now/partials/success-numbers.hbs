@@ -1,0 +1,17 @@
+<section class="gh-page gh-success-numbers">
+    <div class="gh-container">
+        <h2>Das konnten wir dank Ihrer Hilfe bis jetzt in die Ukraine liefern:</h2>
+        <div class="gh-success-numbers-container">
+            {{#get "posts" filter="tag:liefervolumen" order="published_at asc"}}
+            {{#foreach posts}}
+            <div class="gh-success-number">
+                <div class="gh-dash-circle">
+                    {{content}}
+                </div>
+                <h5 class="gh-description">{{title}}</h5>
+            </div>
+            {{/foreach}}
+            {{/get}}
+        </div>
+    </div>
+</section>

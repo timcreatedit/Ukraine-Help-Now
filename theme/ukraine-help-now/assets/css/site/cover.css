@@ -1,0 +1,32 @@
+.gh-cover {
+    width: 100vw;
+    min-height: 60vh;
+    display: flex;
+    align-items: stretch;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.gh-cover-content {
+    width: 100%;
+    padding: 10rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.gh-home .gh-cover-content {
+    background-color: transparent;
+    justify-content: end;
+}
+
+@media (max-width: 1280px) {
+    .gh-cover-content {
+        padding: 2rem;
+    }
+}

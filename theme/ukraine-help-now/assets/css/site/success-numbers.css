@@ -1,0 +1,56 @@
+.gh-success-numbers {
+    background: var(--secondary-gradient-diagonal);
+}
+
+.gh-success-numbers .gh-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+.gh-success-numbers {
+    color: white;
+    text-align: center;
+}
+.gh-success-numbers h2 {
+    color: white;
+}
+
+.gh-success-numbers-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.gh-success-number {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.gh-success-number .gh-description {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+
+.gh-dash-circle {
+    width: 100px;
+    height: 100px;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='%23FFD700FF' stroke-width='6' stroke-dasharray='80%25%2c 10%25' stroke-dashoffset='35' stroke-linecap='round'/%3e%3c/svg%3e");
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gh-dash-circle p {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
