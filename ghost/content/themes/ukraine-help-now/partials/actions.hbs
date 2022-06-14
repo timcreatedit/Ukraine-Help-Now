@@ -1,9 +1,9 @@
 <section class="gh-page gh-actions">
     <div class="gh-container">
         {{#match @custom.amount_of_actions "=" "1"}}
-        <h4>Letze Hilfsaktion:</h4>
+        <h4>Letzte Hilfsaktion:</h4>
         {{else}}
-        <h4>Letze Hilfsaktionen:</h4>
+        <h4>Letzte Hilfsaktionen:</h4>
         {{/match}}
         <div class="gh-postfeed">
             {{#get "posts" limit=@custom.amount_of_actions filter="tag:hilfsaktionen"}}
@@ -14,9 +14,9 @@
         </div>
         <a class="gh-button" href="/hilfsaktionen">Zu allen Hilfsaktionen</a>
         {{#match @custom.amount_of_actions "=" "1"}}
-        <h4>Letze Spendenaktion:</h4>
+        <h4>Letzte Spendenaktion:</h4>
         {{else}}
-        <h4>Letze Spendenaktionen:</h4>
+        <h4>Letzte Spendenaktionen:</h4>
         {{/match}}
 
 
